@@ -11,6 +11,6 @@ services:
     ports:
       - "3128:3128"
     volumes:
-      - c:\pixida\workspace\proxy\cache:/var/spool/squid
-      - c:\pixida\workspace\proxy\squid:/etc/squid
+      - ./cache:/var/spool/squid
+      - ./squid:/etc/squid
     restart: always
